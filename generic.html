@@ -32,11 +32,31 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">EECS 440 P1 - Beyster 1695: The Staff Maintenance Simulator</h1>
+							<h1 class="major">Beyster 1695: The Staff Maintenance Simulator</h1>
 							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 							<p>This project transforms a virtual recreation of the Beyster 1695 laboratory into a reactive "Staff Simulator" where players utilize a custom affordance-based interaction system to resolve environmental disturbances, manage NPC requests, and trigger dynamic audio-visual rewards.</p>
-							<p>In this simulation, the Beyster 1695 laboratory is populated with interactive malfunctioning computer terminals that glitch with disruptive video, noisy printers that emit sparks, and NPC characters that request the return of a physical flash drive. Beyond these core tasks, the environment includes a fire alarm that toggles emergency lighting, flickering ceiling lights, a copy machine that duplicates nearby objects, and a whiteboard that allows for persistent freehand drawing. Players navigate these challenges guided by a tutorial flier on the wall, ultimately triggering a reward sequence featuring a clapping audio cue, flashing green lights, and a spawned donut once all duties are fulfilled.</p>
-							<p>Technically, these interactions are driven by a custom Affordance Actor Component system and a global TaskCounter variable managed within the VRGameMode. The simulation utilizes LineTraceByChannel and Break Hit Result for precise interaction, while Event Tick combined with Modulo and Random Float nodes drive the automated light flickering and SkySphere Sun Height "chasing" logic. Key functions include SpawnActorFromClass for duplicating objects and rewards, SetWorldRotation paired with FindLookAtRotation for NPC head-tracking, and Toggle Visibility for state-based actors. Furthermore, Widget Components are updated via Casting to display dynamic 3D dialogue, and the RefreshMaterial() function is called to synchronize the atmospheric skybox with the shifting day-night cycle.</p>
+							<h2>Gameplay Interaction components</h2>
+							<ul>
+								<li>NPC Dialogue & Engagement</li>
+								<li>Interactive Whiteboard Drawing</li>
+								<li>Copy Machine Physical Duplication</li>
+								<li>Fire Alarm & Light Toggle</li>
+								<li>Environment Day-Night Progression</li>
+								<li>Trash Disposal System</li>
+								<li>Immersive Audio-Visual Feedback</li>
+							</ul>
+							<h2>Technical Implementation</h2>
+							<ul>
+								<li>Custom Affordance Actor Component system</li>
+								<li>Global TaskCounter variable managed within the VRGameMode</li>
+								<li>LineTraceByChannel and Break Hit Result for precise interaction</li>
+								<li>Event Tick combined with Modulo and Random Float nodes for automated light flickering and SkySphere Sun Height "chasing" logic</li>
+								<li>SpawnActorFromClass for duplicating objects and rewards</li>
+								<li>SetWorldRotation paired with FindLookAtRotation for NPC head-tracking</li>
+								<li>Toggle Visibility for state-based actors</li>
+								<li>Widget Components updated via Casting to display dynamic 3D dialogue</li>
+								<li>RefreshMaterial() function called to synchronize atmospheric skybox with shifting day-night cycle</li>
+							</ul>
 						</div>
 					</section>
 
