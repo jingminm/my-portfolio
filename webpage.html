@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>EECS 440 P1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">My Page</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">P1</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Beyster 1695: The Staff Maintenance Simulator</h1>
+							<!-- <video controls preload="metadata">
+								<source src="videos/440p1Gold-compressed.mp4" type="video/mp4">
+							</video> -->
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<p>This project transforms a virtual recreation of the Beyster 1695 laboratory into a reactive "Staff Simulator" where players utilize a custom affordance-based interaction system to resolve environmental disturbances, manage NPC requests, and trigger dynamic audio-visual rewards.</p>
+							<h2>Gameplay Interaction components</h2>
+							<ul>
+								<li>NPC Dialogue & Engagement</li>
+								<li>Interactive Whiteboard Drawing</li>
+								<li>Copy Machine Physical Duplication</li>
+								<li>Fire Alarm & Light Toggle</li>
+								<li>Environment Day-Night Progression</li>
+								<li>Trash Disposal System</li>
+								<li>Immersive Audio-Visual Feedback</li>
+							</ul>
+							<h2>Technical Implementation</h2>
+							<ul>
+								<li>Custom Affordance Actor Component system</li>
+								<li>Global TaskCounter variable managed within the VRGameMode</li>
+								<li>LineTraceByChannel and Break Hit Result for precise interaction</li>
+								<li>Event Tick combined with Modulo and Random Float nodes for automated light flickering and SkySphere Sun Height "chasing" logic</li>
+								<li>SpawnActorFromClass for duplicating objects and rewards</li>
+								<li>SetWorldRotation paired with FindLookAtRotation for NPC head-tracking</li>
+								<li>Toggle Visibility for state-based actors</li>
+								<li>Widget Components updated via Casting to display dynamic 3D dialogue</li>
+								<li>RefreshMaterial() function called to synchronize atmospheric skybox with shifting day-night cycle</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
