@@ -3907,3 +3907,19 @@ input, select, textarea {
 			}
 
 		}
+
+/* Video */
+.video-container {
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    min-height: 100vh;       /* Takes up full viewport height */
+    padding: 20px;           /* Prevents video from touching edges */
+}
+
+/* Makes the video responsive */
+video {
+    max-width: 100%;         /* Fits width of the screen */
+    height: auto;            /* Maintains aspect ratio */
+    border-radius: 8px;      /* Optional: just makes it look cleaner */
+}
