@@ -3924,8 +3924,8 @@ video {
     border-radius: 8px;      /* Optional: just makes it look cleaner */
 }
 .ARVid {
-  width: auto;         /* Allows width to scale with height */
-  max-height: 80vh;    /* Limits height to 80% of the viewport height */
-  display: block;      /* Removes extra bottom margin */
-  margin: 0 auto;      /* Centers the video horizontally */
+  width: auto;         
+  max-height: 80vh;    
+  display: block;      
+  margin: 0 auto;      
 }        
