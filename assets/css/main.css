@@ -3909,12 +3909,20 @@ input, select, textarea {
 		}
 
 /* Video */
+/* .video-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    max-height: 100vh;        
+    padding: 20px;           
+} */
 .video-container {
     display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center;     /* Vertical center */
-    max-height: 100vh;        /* Takes up full viewport height */
-    padding: 20px;           /* Prevents video from touching edges */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Changed from max-height to ensure container fills screen */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't add to the 100vh */
 }
 
 /* Makes the video responsive */
@@ -3929,3 +3937,8 @@ video {
   display: block;      
   margin: 0 auto;      
 }        
+.video-container video {
+    max-width: 100%;    /* Constrains width to container */
+    max-height: 100%;   /* Constrains height to container */
+    object-fit: contain; /* Ensures the entire video is visible without cropping */
+}
