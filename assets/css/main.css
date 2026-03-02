@@ -3913,7 +3913,7 @@ input, select, textarea {
     display: flex;
     justify-content: center; /* Horizontal center */
     align-items: center;     /* Vertical center */
-    min-height: 100vh;       /* Takes up full viewport height */
+    max-height: 100vh;        /* Takes up full viewport height */
     padding: 20px;           /* Prevents video from touching edges */
 }
 
