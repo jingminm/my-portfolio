@@ -2539,6 +2539,10 @@ input, select, textarea {
 					color: #000000;
 				}
 
+				.wrapper.style1#intro {
+					background: #000000;
+				}
+
 				.wrapper.style1-alt .icon.major:before {
 					color: #493382;
 				}
