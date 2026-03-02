@@ -3909,20 +3909,24 @@ input, select, textarea {
 		}
 
 /* Video */
+
 /* .video-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    max-height: 100vh;        
-    padding: 20px;           
-} */
-.video-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Changed from max-height to ensure container fills screen */
+    height: 100vh; 
     padding: 20px;
-    box-sizing: border-box; /* Ensures padding doesn't add to the 100vh */
+    box-sizing: border-box; 
+} */
+.video-container {
+    display: flex;
+    flex-direction: row;      /* Places items side-by-side */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;            /* Increased padding for breathing room */
+    box-sizing: border-box;   /* Prevents padding from causing scrollbars */
+    gap: 30px;                /* Adds space between the video and the text */
 }
 
 /* Makes the video responsive */
@@ -3941,4 +3945,8 @@ video {
     max-width: 100%;    /* Constrains width to container */
     max-height: 100%;   /* Constrains height to container */
     object-fit: contain; /* Ensures the entire video is visible without cropping */
+}
+.video-text {
+    max-width: 30%;           /* Limits text width */
+    color: white;             /* Adjust based on your background */
 }
