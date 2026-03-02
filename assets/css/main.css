@@ -2572,6 +2572,9 @@ input, select, textarea {
 				.wrapper.style1#three {
 					background: #a02cb4;
 				}
+				.wrapper.style1-alt#footer {
+					background: #000000;
+				}
 
 /* Image */
 
@@ -3253,12 +3256,12 @@ input, select, textarea {
 			background-color: #261c3e;
 		}
 
-		/* .wrapper.style1 {
-			background-color: #5e42a6;
-		} */
 		.wrapper.style1 {
-			background-color: #000000;
+			background-color: #5e42a6;
 		}
+		/* .wrapper.style1 {
+			background-color: #000000;
+		} */
 
 		.wrapper.style1-alt {
 			background-color: #493382;
