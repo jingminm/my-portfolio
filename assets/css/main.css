@@ -3947,5 +3947,5 @@ video {
     object-fit: contain; /* Ensures the entire video is visible without cropping */
 }
 .video-text {
-    max-width: 20%;           /* Limits text width */
+    max-width: 50%;           /* Limits text width */
 }
