@@ -2570,7 +2570,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style1#three {
-					background: #ac18c6;
+					background: #a02cb4;
 				}
 
 /* Image */
@@ -3253,8 +3253,11 @@ input, select, textarea {
 			background-color: #261c3e;
 		}
 
-		.wrapper.style1 {
+		/* .wrapper.style1 {
 			background-color: #5e42a6;
+		} */
+		.wrapper.style1 {
+			background-color: #000000;
 		}
 
 		.wrapper.style1-alt {
