@@ -21,12 +21,11 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="SkyEaseVR.html">SkyEase VR</a></li>
-						<li><a href="ARProject.html" >Rocket Science</a></li>
-						<li><a href="AAGo.html" >Ann Arbor Go</a></li>
+						<li><a href="ARProject.html">Rocket Science</a></li>
+						<li><a href="AAGo.html">Ann Arbor Go</a></li>
 						<li><a href="generic.html" class="active">Beyster 1695</a></li>
-						<li><a href="webpage.html" >Marketplace Ads</a></li>
-						<li><a href="skills.html" >Skills & Hobbies</a></li>
-						<!-- <li><a href="elements.html">Elements</a></li> -->
+						<li><a href="webpage.html">Marketplace Ads</a></li>
+						<li><a href="skills.html">Skills & Hobbies</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -38,35 +37,39 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Beyster 1695: The Staff Maintenance Simulator</h1>
-							<div class = "video-container">
-								<video controls preload="metadata">
+							<p class="project-meta">Course project · 3-person developer team · Unreal Engine 5 · Meta Quest 3 · my focus: affordance interactions, lab systems, and reactive props</p>
+
+							<div class="video-container video-container--embed video-container--reduced">
+								<video controls preload="metadata" poster="images/beyster-video-poster.png">
 									<source src="videos/440p1Gold-compressed.mp4" type="video/mp4">
 								</video>
 							</div>
-							<!-- <span class="image fit"><img src="images/pic04.jpg" alt="" /></span> -->
-							<p>This project transforms a virtual recreation of the Beyster 1695 laboratory into a reactive "Staff Simulator" where players utilize a custom affordance-based interaction system to resolve environmental disturbances, manage NPC requests, and trigger dynamic audio-visual rewards.</p>
-							<h2>Gameplay Interaction components</h2>
+
+							<p>Beyster 1695 turns a virtual recreation of the Beyster lab into a VR “staff maintenance” experience. Players move through the space fixing disturbances — flipping systems back to normal, dealing with noisy equipment, and interacting with props that react with sound and visuals.</p>
+
+							<h2>My work</h2>
+							<p>On a three-developer team, I built core interaction systems and reactive lab objects:</p>
 							<ul>
-								<li>NPC Dialogue & Engagement</li>
-								<li>Interactive Whiteboard Drawing</li>
-								<li>Copy Machine Physical Duplication</li>
-								<li>Fire Alarm & Light Toggle</li>
-								<li>Environment Day-Night Progression</li>
-								<li>Trash Disposal System</li>
-								<li>Immersive Audio-Visual Feedback</li>
+								<li><strong>Affordance interaction system</strong> — A base Affordance actor component with an <code>Interact()</code> function, used with controller LineTraces so players can only interact with pointed-at objects that have Affordance-derived components. The trace changes color on hover so interactables feel juicy and readable in VR.</li>
+								<li><strong>Light switches</strong> — At least two light-switch actors that toggle nearby lights on/off, with a flip/toggle sound on each transition.</li>
+								<li><strong>Fire alarm</strong> — Toggles between an active state (lab lights flash red + alarm audio) and an idle state (lights return to normal and the alarm fades out).</li>
+								<li><strong>Glitching computers</strong> — Computers that start glitching and need to be turned off, using trigger volumes and interaction logic so players can restore them.</li>
+								<li><strong>Media player setup</strong> — Wired media player behavior into the lab with the matching static meshes so screens / playback feel like part of the space.</li>
+								<li><strong>Printer feedback</strong> — Printer interactions with printing sound and spark effects to make the machine feel broken / reactive when used.</li>
 							</ul>
-							<h2>Technical Implementation</h2>
+
+							<h2>Gameplay systems</h2>
 							<ul>
-								<li>Custom Affordance Actor Component system</li>
-								<li>Global TaskCounter variable managed within the VRGameMode</li>
-								<li>LineTraceByChannel and Break Hit Result for precise interaction</li>
-								<li>Event Tick combined with Modulo and Random Float nodes for automated light flickering and SkySphere Sun Height "chasing" logic</li>
-								<li>SpawnActorFromClass for duplicating objects and rewards</li>
-								<li>SetWorldRotation paired with FindLookAtRotation for NPC head-tracking</li>
-								<li>Toggle Visibility for state-based actors</li>
-								<li>Widget Components updated via Casting to display dynamic 3D dialogue</li>
-								<li>RefreshMaterial() function called to synchronize atmospheric skybox with shifting day-night cycle</li>
+								<li>NPC dialogue &amp; engagement</li>
+								<li>Interactive whiteboard drawing</li>
+								<li>Copy machine physical duplication</li>
+								<li>Fire alarm &amp; light toggle</li>
+								<li>Environment day-night progression</li>
+								<li>Trash disposal system</li>
+								<li>Immersive audio-visual feedback</li>
 							</ul>
+
+							<p class="project-meta">Stack: Unreal Engine 5 · Meta Quest 3 · Blueprints / VR interaction</p>
 						</div>
 					</section>
 

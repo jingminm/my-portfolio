@@ -21,12 +21,11 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="SkyEaseVR.html">SkyEase VR</a></li>
-						<li><a href="ARProject.html" >Rocket Science</a></li>
+						<li><a href="ARProject.html">Rocket Science</a></li>
 						<li><a href="AAGo.html" class="active">Ann Arbor Go</a></li>
-						<li><a href="generic.html" >Beyster 1695</a></li>
-						<li><a href="webpage.html" >Marketplace Ads</a></li>
-						<li><a href="skills.html" >Skills & Hobbies</a></li>
-						<!-- <li><a href="elements.html">Elements</a></li> -->
+						<li><a href="generic.html">Beyster 1695</a></li>
+						<li><a href="webpage.html">Marketplace Ads</a></li>
+						<li><a href="skills.html">Skills & Hobbies</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -37,36 +36,38 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">AA Go AR Project</h1>
-							<div class = "video-container">
-								<video controls preload="metadata">
+							<h1 class="major">Ann Arbor Go</h1>
+							<p class="project-meta">Course project · team of 2 · Unity AR · my focus: landmark discovery, compass, squirrel encounters, and player avatar</p>
+
+							<div class="video-container video-container--embed video-container--reduced">
+								<video controls preload="metadata" poster="images/aago-video-poster.png">
 									<source src="videos/p2gold-2.mp4" type="video/mp4">
 								</video>
 							</div>
-							<!-- <span class="image fit"><img src="images/pic04.jpg" alt="" /></span> -->
-							<p>This project leverages augmented reality to create an immersive experience for exploring the University of Michigan campus.</p>
-							<h2>Gameplay Interaction components</h2>
+
+							<p>Ann Arbor Go is an AR campus exploration game set around the University of Michigan. Players walk the real world in Exploration Mode, discover landmarks, plant trees, earn currency, and deal with Ann Arbor’s famously well-fed squirrels — then switch to Interaction Mode to battle them up close.</p>
+
+							<h2>My work</h2>
+							<p>On a two-person team, I built several of the core exploration and encounter systems:</p>
 							<ul>
-								<li>Camera Orbit and Rotations</li>
-								<li>Interaction Mode & Exploration Mode</li>
-								<li>Seed Shop & Currency Tracker</li>
-								<li>Real time map of physical location</li>
-								<li>Squirrel Fight and NPC Interaction</li>
-								<li>Landmark information UI</li>
-								<li>AR Image tracking</li>
+								<li><strong>Landmark discovery rewards</strong> — When a player taps a nearby landmark, a UI panel shows trivia, a photo of the real place, and a notice that a new seed type has been unlocked. A second tap closes the panel so they can keep exploring.</li>
+								<li><strong>North-facing compass</strong> — A compass stays visible at the top of the screen and always points north, no matter how the player camera is oriented.</li>
+								<li><strong>Squirrel encounters</strong> — Squirrels occasionally spawn near trees in Exploration Mode and cut currency output from nearby trees. In Interaction Mode, players can battle them while the squirrel uses evasive movement around the tree to dodge acorn throws.</li>
+								<li><strong>Player avatar</strong> — A custom humanoid character that moves smoothly between locations and plays a walk-cycle animation while moving.</li>
 							</ul>
-							<!-- <h2>Technical Implementation</h2>
+
+							<h2>Gameplay systems</h2>
 							<ul>
-								<li>Custom Affordance Actor Component system</li>
-								<li>Global TaskCounter variable managed within the VRGameMode</li>
-								<li>LineTraceByChannel and Break Hit Result for precise interaction</li>
-								<li>Event Tick combined with Modulo and Random Float nodes for automated light flickering and SkySphere Sun Height "chasing" logic</li>
-								<li>SpawnActorFromClass for duplicating objects and rewards</li>
-								<li>SetWorldRotation paired with FindLookAtRotation for NPC head-tracking</li>
-								<li>Toggle Visibility for state-based actors</li>
-								<li>Widget Components updated via Casting to display dynamic 3D dialogue</li>
-								<li>RefreshMaterial() function called to synchronize atmospheric skybox with shifting day-night cycle</li>
-							</ul> -->
+								<li>Exploration Mode &amp; Interaction Mode</li>
+								<li>Camera orbit and rotations</li>
+								<li>Landmark information UI &amp; seed unlock rewards</li>
+								<li>Seed shop &amp; currency tracker</li>
+								<li>Real-time map / north-facing compass</li>
+								<li>Squirrel spawning, tree disruption, and battle encounters</li>
+								<li>AR image tracking</li>
+							</ul>
+
+							<p class="project-meta">Stack: Unity AR</p>
 						</div>
 					</section>
 

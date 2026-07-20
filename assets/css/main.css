@@ -3997,8 +3997,55 @@ video {
     border: 0;
     border-radius: 8px;
 }
+.video-container--reduced {
+    width: 70%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video-container--reduced video {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+}
+.video-container--compact {
+    height: auto;
+    padding: 1.5em 0;
+    align-items: center;
+}
+.video-container--compact video {
+    flex: 0 1 38%;
+    width: 38%;
+    max-width: 38%;
+    max-height: none;
+}
+.video-container--compact .video-text {
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+.video-container--compact .video-text p {
+    margin: 0;
+}
+.video-container--reverse {
+    flex-direction: row-reverse;
+}
 .video-text {
     max-width: 50%;           /* Limits text width */
+}
+
+@media screen and (max-width: 980px) {
+	.video-container--compact,
+	.video-container--reverse {
+		flex-direction: column;
+		align-items: stretch;
+		padding: 1em 0;
+	}
+
+	.video-container--compact video,
+	.video-container--compact .video-text {
+		flex: 1 1 auto;
+		max-width: 100%;
+	}
 }
 
 /* Project page layout */
