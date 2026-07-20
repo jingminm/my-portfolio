@@ -16,7 +16,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">My Page</a>
+				<a href="index.html" class="title">Portfolio</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -38,49 +38,65 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">SkyEase VR</h1>
-							<div class = "video-container">
-								<!-- <video controls preload="metadata">
-									<source src="videos/p2gold-2.mp4" type="video/mp4">
-								</video> -->
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/jeKEZo93EV4?si=kMiaP4QvsVmRqkVm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<p class="project-meta">Unreal Engine 5 · Meta Quest · 3-person course team · my focus: cabin modeling &amp; interior interactions</p>
+							<div class="video-container video-container--embed">
+								<iframe src="https://www.youtube.com/embed/jeKEZo93EV4?si=kMiaP4QvsVmRqkVm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							</div>
-                            <a href = "https://flightexposure.weebly.com">Product website link</a>
-							<!-- <span class="image fit"><img src="images/pic04.jpg" alt="" /></span> -->
-							<p>SkyEase VR is an immersive VR exposure therapy application designed to help individuals overcome Aerophobia (fear of flying). By leveraging Unreal Engine 5’s high-fidelity rendering, the project creates a hyper-realistic airplane cabin environment where users can safely confront their anxiety. </p>
-							<h2>Gameplay Interaction components</h2>
-							<ul>
-								<li>Intuitive Hand Controls</li>
-								<li>Dynamic Teleportation</li>
-								<li>Head-Tracked Menus</li>
-								<li>Seatbelt Physics & Logic</li>
-								<li>Window Shade Manipulation</li>
-								<li>Curtain Exit (Scene Transition)</li>
-								<li>Seatback Screen Prompts</li>
-                                <li>Takeoff Confirmation Widget</li>
-                                <li>Pre-Flight & Landing Safety Checks</li>
+							<ul class="actions project-link">
+								<li><a href="https://flightexposure.weebly.com" class="button">Project site</a></li>
 							</ul>
-							<!-- <h2>Technical Implementation</h2>
-							<ul>
-								<li>Custom Affordance Actor Component system</li>
-								<li>Global TaskCounter variable managed within the VRGameMode</li>
-								<li>LineTraceByChannel and Break Hit Result for precise interaction</li>
-								<li>Event Tick combined with Modulo and Random Float nodes for automated light flickering and SkySphere Sun Height "chasing" logic</li>
-								<li>SpawnActorFromClass for duplicating objects and rewards</li>
-								<li>SetWorldRotation paired with FindLookAtRotation for NPC head-tracking</li>
-								<li>Toggle Visibility for state-based actors</li>
-								<li>Widget Components updated via Casting to display dynamic 3D dialogue</li>
-								<li>RefreshMaterial() function called to synchronize atmospheric skybox with shifting day-night cycle</li>
-							</ul> -->
+							<p>SkyEase VR is an immersive VR exposure therapy application designed to help individuals overcome aerophobia (fear of flying). Built in Unreal Engine 5, it places users in a passenger cabin where they can safely confront flight anxiety across takeoff, cruise, and landing.</p>
+
+							<div class="story-split">
+								<div class="story-split__text">
+									<h2>Research story</h2>
+									<p>Research for this course project showed few VR products aimed at passengers with aerophobia — most flight sims target pilot training. Prior work on VR exposure therapy suggests immersion can help people confront fears (including flight-related anxiety) in a controlled setting. We designed SkyEase as a passenger-focused experience spanning takeoff, cruise, and landing, with subtle cabin motion and engine ambience to support that exposure.</p>
+								</div>
+								<figure class="story-split__media">
+									<img src="images/skyease-window-view.png" alt="In-cabin view looking out an airplane window over a city and mountains in SkyEase VR" />
+									<figcaption>Passenger window view from inside the cabin simulation</figcaption>
+								</figure>
+							</div>
+
+							<h2>My work</h2>
+							<p>I owned cabin modeling and interior interaction design — including the seatbelt, seatbelt sign, NPC, and seatback screen.</p>
+							<p>I designed the seatbelt as a physical, slot-based interaction: when the buckle head touches the slot, it snaps in and stays attached until the user presses a release button. A click sound plays on lock so the action feels confirmed, not ambiguous. The seatbelt sign is tied to flight state — lit during takeoff and landing, darkened during cruise — so the cabin responds like a real aircraft and reinforces each stage of the exposure experience.</p>
+
+							<div class="story-split story-split--top story-split--reverse">
+								<div class="story-split__text">
+									<h2>Gameplay interaction components</h2>
+									<ul>
+										<li>Intuitive Menu Controls</li>
+										<li>Dynamic Teleportation</li>
+										<li>Head-Tracked Menus</li>
+										<li>Seatbelt Physics &amp; Logic</li>
+										<li>Window Shade Manipulation</li>
+										<li>Curtain Exit (Scene Transition)</li>
+										<li>Seatback Screen Prompts</li>
+										<li>Takeoff Confirmation Widget</li>
+										<li>Pre-Flight &amp; Landing Safety Checks</li>
+									</ul>
+								</div>
+								<figure class="story-split__media">
+									<img src="images/skyease-cabin-interior.png" alt="Airplane cabin interior in SkyEase VR showing passenger seats, NPCs, and seatback screens" />
+									<figcaption>Cabin interior with seated NPCs and interactive seatback screens</figcaption>
+								</figure>
+							</div>
+
+							<h2>Playtest feedback</h2>
+							<p>Playtesters said they enjoyed the simulation and found it somewhat realistic. People who already like flying also wanted more experiences and scenarios to explore.</p>
+
+							<p class="project-meta">Stack: Unreal Engine 5 · Meta Quest · Blueprints · modeling in Unreal Engine &amp; Blender</p>
 						</div>
 					</section>
 
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
+			<footer id="footer" class="wrapper silver">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Jingmin Mei. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>

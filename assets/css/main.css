@@ -2562,7 +2562,7 @@ input, select, textarea {
 					color: #4df5d9;
 				}
 				.wrapper.style3#two {
-					background: #36b09c;
+					background: #72decc;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -2570,7 +2570,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style1#three {
-					background: #a02cb4;
+					background: #b600d2;
 				}
 				.wrapper.style1-alt#footer {
 					background: #000000;
@@ -3254,6 +3254,24 @@ input, select, textarea {
 
 		.wrapper.alt {
 			background-color: #261c3e;
+		}
+
+		.wrapper.silver {
+			background-color: #b600d2;
+			color: #2a2a2a;
+		}
+
+		#footer.wrapper.silver > .inner .menu {
+			color: rgba(0, 0, 0, 0.55);
+		}
+
+		#footer.wrapper.silver > .inner a {
+			color: #2a2a2a;
+			border-bottom-color: rgba(0, 0, 0, 0.35);
+		}
+
+		#footer.wrapper.silver > .inner a:hover {
+			border-bottom-color: transparent;
 		}
 
 		.wrapper.style1 {
@@ -3966,6 +3984,91 @@ video {
     max-height: 100%;   /* Constrains height to container */
     object-fit: contain; /* Ensures the entire video is visible without cropping */
 }
+.video-container--embed {
+    height: auto;
+    padding: 0 0 2em;
+    width: 100%;
+}
+.video-container--embed iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 480px;
+    border: 0;
+    border-radius: 8px;
+}
 .video-text {
     max-width: 50%;           /* Limits text width */
+}
+
+/* Project page layout */
+.project-meta {
+	opacity: 0.75;
+	margin: 0 0 1.5em 0;
+}
+
+.project-link {
+	margin: 0 0 1.5em 0;
+}
+
+.story-split {
+	display: flex;
+	align-items: center;
+	gap: 2.5em;
+	margin: 2.5em 0 3em;
+}
+
+.story-split--top {
+	align-items: flex-start;
+}
+
+.story-split--reverse {
+	flex-direction: row-reverse;
+}
+
+.story-split__text {
+	flex: 1 1 45%;
+	min-width: 0;
+}
+
+.story-split__text h2 {
+	margin-top: 0;
+}
+
+.story-split__text p:last-child {
+	margin-bottom: 0;
+}
+
+.story-split__media {
+	flex: 1 1 55%;
+	margin: 0;
+	min-width: 0;
+}
+
+.story-split__media img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.story-split__media figcaption {
+	margin-top: 0.75em;
+	font-size: 0.85em;
+	opacity: 0.65;
+	letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 980px) {
+	.story-split,
+	.story-split--reverse {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 1.5em;
+	}
+
+	.story-split__text,
+	.story-split__media {
+		flex: 1 1 auto;
+	}
 }
